@@ -1,0 +1,32 @@
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.bak
+*.user
+
+# OS or Editor folders
+.DS_Store
+.cache
+.project
+.settings
+nbproject
+thumbs.db
+_ReSharper*
+*.suo
+
+# Folders to ignore
+.hg
+.svn
+publish
+.idea
+
+# build script local files
+build/buildinfo.properties
+build/config/buildinfo.properties
