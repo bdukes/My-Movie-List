@@ -26,6 +26,7 @@ _ReSharper*
 .svn
 publish
 .idea
+.bundle
 
 # build script local files
 build/buildinfo.properties

@@ -1,14 +1,7 @@
-use Rack::Static, 
-  :urls => ["/css", "/img", "/js"],
-  :root => "public"
+require 'rubygems'
+require 'bundler'
 
-run lambda { |env|
-  [
-    200, 
-    {
-      'Content-Type'  => 'text/html', 
-      'Cache-Control' => 'public, max-age=86400' 
-    },
-    File.open('public/index.html', File::RDONLY)
-  ]
-}
+Bundler.require
+
+require './my-movie-list'
+run MyMovieList
